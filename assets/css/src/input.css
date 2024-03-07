@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto Condenced";
+    color: white;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-900;
+  }
+
+  .wrapper {
+    @apply px-4 xl:px-16;
+  }
+
+  .box {
+    @apply w-[1280px] max-w-full mx-auto;
+  }
+
+  .box-sm {
+    @apply w-[920px] max-w-full mx-auto;
+  }
+}
+
+@layer components {
+
+  .button,
+  .wp-block-button__link.wp-element-button {
+    @apply flex items-center justify-center px-12 py-3 text-base font-semibold leading-none text-white uppercase duration-200 border-2 border-yellow-500 rounded-lg w-fit bg-neutral-900;
+
+    position: relative;
+  }
+
+  .button::before,
+  .wp-block-button__link.wp-element-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/arrow-yellow-right.svg') no-repeat center left 8px;
+    background-size: auto 100%;
+    z-index: 1;
+    transition: .4s cubic-bezier(.68, -0.55, .85, .85);
+  }
+
+  .button:hover::before,
+  .wp-block-button__link.wp-element-button:hover::before {
+    background-position-x: 130%;
+  }
+
+  .button--yellow {
+    @apply bg-yellow-300 text-neutral-900;
+  }
+
+  .button--yellow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/arrow-black-right.svg') no-repeat center left 8px;
+    background-size: auto 100%;
+    z-index: 1;
+    transition: .4s cubic-bezier(.68, -0.55, .85, .85);
+  }
+
+  .heading {
+    @apply text-5xl font-bold md:text-6xl;
+  }
+
+  .subheading {
+    @apply text-lg font-semibold md:text-xl;
+  }
+
+
+  /* Contact Form */
+
+  .contact-form-wrapper {}
+
+  .contact-form-wrapper .wpcf7-form {
+    @apply grid gap-6 sm:grid-cols-6;
+  }
+
+  .contact-form-wrapper .wpcf7-form-control-wrap {
+    @apply block w-full sm:col-span-3;
+  }
+
+  .contact-form-wrapper .wpcf7-form-control-wrap[data-name="your-message"] {
+    @apply sm:col-span-6;
+  }
+
+  .contact-form-wrapper .custom-form-input {
+    @apply block w-full p-2 font-light text-white outline-none bg-neutral-700;
+  }
+
+  .contact-form-wrapper .custom-form-input:focus {
+    @apply outline-dashed outline-yellow-500;
+  }
+
+  .contact-form-wrapper textarea.custom-form-input {
+    @apply resize-none;
+  }
+
+  .contact-form-wrapper .wpcf7-response-output {
+    @apply md:col-span-6;
+  }
+
+  /* Get Book Form */
+
+  .book-form-wrapper {}
+
+  .book-form-wrapper .wpcf7-form {
+    @apply grid gap-6 md:grid-cols-10;
+  }
+
+  .book-form-wrapper .wpcf7-form-control-wrap {
+    @apply block w-full md:col-span-4 md:col-start-1;
+  }
+
+  .book-form-wrapper .wpcf7-form-control-wrap[data-name="your-message"] {
+    @apply md:col-span-6 md:col-start-5 md:row-span-3 md:row-start-1;
+  }
+
+  .book-form-wrapper .custom-form-input,
+  .book-form-wrapper .wpcf7-select {
+    @apply block w-full p-2 font-light text-white outline-none bg-neutral-700;
+  }
+
+  .book-form-wrapper .custom-form-input:focus,
+  .book-form-wrapper .wpcf7-select:focus {
+    @apply outline-dashed outline-yellow-500;
+  }
+
+  .book-form-wrapper textarea.custom-form-input {
+    @apply resize-none;
+  }
+
+  .book-form-wrapper button[type="submit"] {
+    @apply md:col-span-6 md:justify-self-end;
+  }
+
+  .book-form-wrapper .wpcf7-response-output {
+    @apply md:col-span-6;
+  }
+
+  .book-form-wrapper .wpcf7-select {
+    background: url(/wp-content/themes/zankavets/assets/images/arrow-down-icon.svg) no-repeat;
+    background-position: center right 4px;
+    background-size: 24px;
+    @apply appearance-none cursor-pointer bg-neutral-700 text-neutral-400;
+  }
+
+  /* Prose Content */
+
+  .prose {
+    @apply max-w-full
+  }
+
+  .prose h2 {
+    margin-top: 0;
+  }
+
+  .prose figure {
+    @apply mt-0 overflow-hidden border-2 border-yellow-400 shadow-lg rounded-xl;
+  }
+
+  .prose figure.alignleft,
+  .prose figure.alignright,
+  .prose figure.alignnone,
+  .prose figure.aligncenter {
+    @apply max-lg:float-none max-lg:mx-auto;
+  }
+
+  .prose figure>img,
+  .prose figure iframe {
+    @apply !w-full !h-full object-cover object-center;
+  }
+
+  .prose figure iframe {
+    @apply !w-full !aspect-video;
+  }
+}
