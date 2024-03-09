@@ -27,8 +27,8 @@ $row_layout = get_row_layout();
       <?php get_template_part('template-parts/content/section', 'cta') ?>
     <?php elseif (get_row_layout() == 'books') : ?>
       <?php get_template_part('template-parts/content/section', 'books') ?>
-    <?php elseif (get_row_layout() == 'lastPublications') : ?>
-      <?php get_template_part('template-parts/content/section', 'last-publications') ?>
+    <?php elseif (get_row_layout() == 'selectedPublications') : ?>
+      <?php get_template_part('template-parts/content/section', 'selected-publications') ?>
     <?php elseif (get_row_layout() == 'contactForm') : ?>
       <?php get_template_part('template-parts/content/section', 'contact-form') ?>
     <?php endif; ?>
