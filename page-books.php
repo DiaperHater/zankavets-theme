@@ -1,19 +1,43 @@
 <?php get_header() ?>
 
-<section class="py-24 bg-white">
-  <div class="wrapper">
-    <div class="box">
-      <!-- Head -->
-      <div class="mb-24">
+<?php
+
+$background = get_field('background')
+
+?>
+
+<section class="">
+  <!-- Hero -->
+  <div class="relative py-32">
+    <!-- VideBG -->
+    <video autoplay muted loop playsinline class="absolute inset-0 object-cover object-center w-full h-full">
+      <source src="<?= $background['video_url'] ?>" />
+      <img src="<?= $background['image']['sizes']['large'] ?>">
+    </video>
+    <!-- BgOverlay -->
+    <div class="absolute inset-0 duration-300 bg-neutral-900 bg-opacity-70 group-hover:backdrop-blur-sm"></div>
+    <!-- Inner -->
+    <div class="wrapper">
+      <div class="relative box">
         <!-- Heading -->
-        <h2 class="heading text-neutral-900 text-center pb-12">
+        <h2 class="max-w-xl pb-12 mx-auto text-center text-yellow-300 heading">
           <?= get_the_title() ?>
         </h2>
         <!-- Subheading -->
-        <p class="subheading text-neutral-900 text-center max-w-2xl mx-auto">
-          <?= get_the_excerpt() ?>
+        <p class="max-w-2xl mx-auto text-2xl tracking-wide text-center text-yellow-300">
+          <?= has_excerpt() ? get_the_excerpt() : '&nbsp;' ?>
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-24 bg-white">
+
+
+  <div class="wrapper">
+
+    <div class="box">
       <!-- BlogPostCards -->
       <?php
 
