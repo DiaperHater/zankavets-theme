@@ -1893,7 +1893,7 @@ body {
      object-position: center;
 }
 
-.prose figure.alignnone>img {
+.prose figure.wp-block-image>img {
   width: 100% !important;
 }
 
@@ -5155,7 +5155,7 @@ body {
        object-position: center;
   }
 
-  .sm\:prose figure.alignnone>img {
+  .sm\:prose figure.wp-block-image>img {
     width: 100% !important;
   }
 
@@ -6036,7 +6036,7 @@ body {
        object-position: center;
   }
 
-  .dark\:prose figure.alignnone>img {
+  .dark\:prose figure.wp-block-image>img {
     width: 100% !important;
   }
 
