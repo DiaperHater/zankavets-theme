@@ -171,6 +171,10 @@
     margin-top: 0;
   }
 
+  .prose p:last-child {
+    margin-bottom: 0;
+  }
+
   .prose figure {
     @apply mt-0 overflow-hidden border-2 border-yellow-400 shadow-lg rounded-xl;
   }

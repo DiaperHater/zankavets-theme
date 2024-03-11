@@ -1861,6 +1861,10 @@ body {
   margin-top: 0;
 }
 
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
 .prose figure {
   margin-top: 0px;
   overflow: hidden;
@@ -5127,6 +5131,10 @@ body {
     margin-top: 0;
   }
 
+  .sm\:prose p:last-child {
+    margin-bottom: 0;
+  }
+
   .sm\:prose figure {
     margin-top: 0px;
     overflow: hidden;
@@ -6006,6 +6014,10 @@ body {
 
   .dark\:prose p:first-child {
     margin-top: 0;
+  }
+
+  .dark\:prose p:last-child {
+    margin-bottom: 0;
   }
 
   .dark\:prose figure {
