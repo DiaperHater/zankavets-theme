@@ -180,7 +180,7 @@
 
   .prose figure>img,
   .prose figure iframe {
-    @apply !w-full !h-full object-cover object-center;
+    @apply !h-full object-cover object-center;
   }
 
   .prose figure iframe {

@@ -1883,7 +1883,6 @@ body {
 .prose figure>img,
   .prose figure iframe {
   height: 100% !important;
-  width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2144,10 +2143,6 @@ body {
 
 .mt-\[76px\] {
   margin-top: 76px;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .box-border {
@@ -3663,6 +3658,11 @@ body {
   padding-bottom: 6rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -3671,11 +3671,6 @@ body {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
 .pb-0 {
@@ -5142,7 +5137,6 @@ body {
 
   .sm\:prose figure>img,.sm\:prose figure iframe {
     height: 100% !important;
-    width: 100% !important;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
@@ -6016,7 +6010,6 @@ body {
 
   .dark\:prose figure>img,.dark\:prose figure iframe {
     height: 100% !important;
-    width: 100% !important;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
