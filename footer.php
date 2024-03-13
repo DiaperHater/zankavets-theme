@@ -42,7 +42,7 @@
         <div class="flex justify-between font-light text-yellow-300">
           <!-- Sign -->
           <p class="">
-            © valdyzankavets.com <?php echo date("Y"); ?>
+            © vladyzankavets.com <?php echo date("Y"); ?>
           </p>
           <p>
             Website by <a href="https://valerypronin.com" class=""><strong>Valery Pronin</strong></a>
