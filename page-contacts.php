@@ -9,20 +9,20 @@
           Contacts
         </h2>
         <!-- TelAndEmail -->
-        <div class="mb-12">
-          <p class="mb-2 text-3xl text-right text-neutral-900">
+        <div class="mb-12 lg:mx-12">
+          <p class="mb-2 text-3xl text-neutral-900">
             Tel: <a href="<?= get_field('telnum')['url'] ?>" class="duration-300 hover:text-yellow-500 hover:underline"><?= get_field('telnum')['title'] ?></a>
           </p>
           <?php
           if (get_field('telnum_2')['url']) {
           ?>
-            <p class="mb-2 text-3xl text-right text-neutral-900">
+            <p class="mb-2 text-3xl text-neutral-900">
               Tel: <a href="<?= get_field('telnum_2')['url'] ?>" class="duration-300 hover:text-yellow-500 hover:underline"><?= get_field('telnum_2')['title'] ?></a>
             </p>
           <?php
           }
           ?>
-          <p class="text-3xl text-right text-neutral-900">
+          <p class="text-3xl text-neutral-900">
             Email: <a href="mailto:<?= get_field('email') ?>" class="duration-300 hover:text-yellow-500 hover:underline"><?= get_field('email') ?></a>
           </p>
         </div>
