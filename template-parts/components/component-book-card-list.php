@@ -18,23 +18,23 @@ $args = wp_parse_args($args, array(
     $cover = get_the_post_thumbnail_url($id, 'medium');
   ?>
     <!-- Item -->
-    <div class="bg-white px-4 py-12 mt-44 w-96 max-w-full border-2 border-yellow-300 rounded-xl shadow-lg md:mt-20 ">
+    <div class="max-w-full px-4 py-12 bg-white border-2 border-yellow-300 shadow-lg mt-44 w-96 rounded-xl md:mt-20 ">
       <!-- Image -->
-      <div class="h-32 overflow-visible flex items-end justify-center mb-6">
+      <div class="flex items-end justify-center h-32 mb-6 overflow-visible">
         <img src="<?= $cover ?>" alt="<?= $title . ' book cover' ?>" class="w-[200px]">
       </div>
       <div class="text-neutral-900">
-        <h3 class="text-3xl font-bold mb-4 text-center">
+        <h3 class="mb-4 text-3xl font-bold text-center">
           <?= $title ?>
         </h3>
         <p class="mb-8 text-center">
           <?= $excerption ?>
         </p>
         <div class="">
-          <a href="<?= get_permalink($id) ?>" class="button button--yellow mb-6 w-full">
+          <a href="<?= get_permalink($id) ?>" class="w-full mb-6 button button--yellow">
             more info
           </a>
-          <a href="#form" class="button w-full">
+          <a href="<?= get_permalink($id) ?>#form" class="w-full button">
             Get book
           </a>
         </div>
