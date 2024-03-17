@@ -17,7 +17,7 @@
           if (get_field('telnum_2')['url']) {
           ?>
             <p class="mb-2 text-3xl text-neutral-900">
-              Tel: <a href="<?= get_field('telnum_2')['url'] ?>" class="duration-300 hover:text-yellow-500 hover:underline"><?= get_field('telnum_2')['title'] ?></a>
+              WhatsApp: <a href="<?= get_field('telnum_2')['url'] ?>" class="duration-300 hover:text-yellow-500 hover:underline"><?= get_field('telnum_2')['title'] ?></a>
             </p>
           <?php
           }
