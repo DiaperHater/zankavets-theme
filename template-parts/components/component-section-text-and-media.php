@@ -12,7 +12,7 @@ $heading = $args['heading'];
 $text = $args['text'];
 $link = $args['link'];
 $video = $args['video'];
-$image = $args['image'] ? $args['image']['sizes']['medium_large'] : false;
+$image = is_array($args['image']) ? $args['image']['sizes']['medium_large'] : $args['image'];
 ?>
 
 <!-- TextAndMedia -->
