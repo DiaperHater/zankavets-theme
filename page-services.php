@@ -6,11 +6,11 @@
       <!-- Head -->
       <div class="">
         <!-- Heading -->
-        <h2 class="heading text-neutral-900 text-center pb-12">
+        <h2 class="pb-12 text-center heading text-neutral-900">
           <?= get_the_title() ?>
         </h2>
         <!-- Subheading -->
-        <p class="subheading text-neutral-900 text-center max-w-2xl mx-auto">
+        <p class="max-w-2xl mx-auto text-center subheading text-neutral-900">
           <?= get_the_excerpt() ?>
         </p>
       </div>
@@ -47,10 +47,12 @@ foreach ($post_id_list as  $id) {
 
 <?php
 
-get_template_part('template-parts/content/section', 'testimonials', array(
-  'heading' => 'Customer Reviews',
-  'terms' => 'service-consumer'
-))
+// Disabled until have no customer testimonials
+
+// get_template_part('template-parts/content/section', 'testimonials', array(
+//   'heading' => 'Customer Reviews',
+//   'terms' => 'service-consumer'
+// ))
 ?>
 
 <?php get_template_part('template-parts/content/section', 'get-service-form') ?>

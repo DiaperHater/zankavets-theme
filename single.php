@@ -77,19 +77,24 @@ $blocks = parse_blocks($content);
 if ($post->post_type == 'book') {
 
   // Testimonials
-  get_template_part('template-parts/content/section', 'testimonials', array(
-    'heading' => 'Reader reviews',
-    'terms' => 'book-reader'
-  ));
+  // Disabled until have no reader testimonials
+
+  // get_template_part('template-parts/content/section', 'testimonials', array(
+  //   'heading' => 'Reader reviews',
+  //   'terms' => 'book-reader'
+  // ));
+
   // GetBookForm
   get_template_part('template-parts/content/section', 'get-book-form');
 } elseif ($post->post_type == 'service') {
 
   // Testimonials
-  get_template_part('template-parts/content/section', 'testimonials', array(
-    'heading' => 'Customer Reviews',
-    'terms' => 'service-consumer'
-  ));
+  // Disabled until have no customer testimonials
+
+  // get_template_part('template-parts/content/section', 'testimonials', array(
+  //   'heading' => 'Customer Reviews',
+  //   'terms' => 'service-consumer'
+  // ));
   // GetServiceForm
   get_template_part('template-parts/content/section', 'get-service-form');
 } else {

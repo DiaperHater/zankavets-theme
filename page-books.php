@@ -32,7 +32,7 @@ $background = get_field('background')
   </div>
 </section>
 
-<section class="pt-24 bg-white">
+<section class="py-24 bg-white">
 
 
   <div class="wrapper">
@@ -58,11 +58,12 @@ $background = get_field('background')
 
 
 <?php
+// Disabled until have no reader testimonials
 
-get_template_part('template-parts/content/section', 'testimonials', array(
-  'heading' => 'Reader reviews',
-  'terms' => 'book-reader'
-))
+// get_template_part('template-parts/content/section', 'testimonials', array(
+//   'heading' => 'Reader reviews',
+//   'terms' => 'book-reader'
+// ))
 ?>
 
 <?php get_template_part('template-parts/content/section', 'get-book-form') ?>
