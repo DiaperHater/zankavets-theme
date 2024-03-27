@@ -77,7 +77,7 @@ $blocks = parse_blocks($content);
 if ($post->post_type == 'book') {
 
   get_template_part('template-parts/content/section', 'testimonials', array(
-    'heading' => 'Reader reviews',
+    'heading' => 'Testimonials',
     'terms' => 'book-reader'
   ));
 
