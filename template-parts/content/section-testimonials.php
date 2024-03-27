@@ -9,6 +9,14 @@ $params = array(
   'post_type' => 'testimonial',
   'posts_per_page' => -1,
   'post_status' => 'publish',
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'testimonial-category',
+      'field'    => 'slug',
+      'terms'    => array('book-reader'),
+      'operator' => 'NOT IN'
+    )
+  ),
   'fields' => 'ids'
 );
 
