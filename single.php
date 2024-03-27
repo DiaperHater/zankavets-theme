@@ -73,6 +73,50 @@ $blocks = parse_blocks($content);
 </section>
 
 <?php
+if (have_rows('content')) {
+  while (have_rows('content')) {
+
+    the_row();
+
+    if (get_row_layout() == 'homeHero') {
+
+      get_template_part('template-parts/content/section', 'home-hero');
+    } elseif (get_row_layout() == 'socials') {
+
+      get_template_part('template-parts/content/section', 'socials');
+    } elseif (get_row_layout() == 'menu') {
+
+      get_template_part('template-parts/content/section', 'menu');
+    } elseif (get_row_layout() == 'textAndMedia') {
+
+      get_template_part('template-parts/content/section', 'text-and-media');
+    } elseif (get_row_layout() == 'certificates') {
+
+      get_template_part('template-parts/content/section', 'certificates');
+    } elseif (get_row_layout() == 'clients') {
+
+      get_template_part('template-parts/content/section', 'clients');
+    } elseif (get_row_layout() == 'numbers') {
+
+      get_template_part('template-parts/content/section', 'numbers');
+    } elseif (get_row_layout() == 'testimonials') {
+
+      get_template_part('template-parts/content/section', 'testimonials');
+    } elseif (get_row_layout() == 'cta') {
+
+      get_template_part('template-parts/content/section', 'cta');
+    } elseif (get_row_layout() == 'books') {
+
+      get_template_part('template-parts/content/section', 'books');
+    } elseif (get_row_layout() == 'selectedPublications') {
+
+      get_template_part('template-parts/content/section', 'selected-publications');
+    } elseif (get_row_layout() == 'contactForm') {
+
+      get_template_part('template-parts/content/section', 'contact-form');
+    }
+  }
+}
 
 if ($post->post_type == 'book') {
 
