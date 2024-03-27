@@ -76,13 +76,10 @@ $blocks = parse_blocks($content);
 
 if ($post->post_type == 'book') {
 
-  // Testimonials
-  // Disabled until have no reader testimonials
-
-  // get_template_part('template-parts/content/section', 'testimonials', array(
-  //   'heading' => 'Reader reviews',
-  //   'terms' => 'book-reader'
-  // ));
+  get_template_part('template-parts/content/section', 'testimonials', array(
+    'heading' => 'Reader reviews',
+    'terms' => 'book-reader'
+  ));
 
   // GetBookForm
   get_template_part('template-parts/content/section', 'get-book-form');
